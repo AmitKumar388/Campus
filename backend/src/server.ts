@@ -7,6 +7,8 @@ import authRoutes from './routes/auth';
 import { PORT } from './config';
 import adminRoutes from './routes/admin';
 import facultyRoutes from './routes/faculty';
+import facultyAttendanceRoutes from "./routes/facultyAttendance";
+import studentAttendanceRoutes from "./routes/studentAttendance";
 
 dotenv.config();
 const app = express();
@@ -25,6 +27,10 @@ app.use(
 
 app.use('/api/faculty', facultyRoutes);
 
+
+
+app.use("/api/faculty/attendance", facultyAttendanceRoutes);
+app.use("/api/student/attendance", studentAttendanceRoutes);
 
 
 

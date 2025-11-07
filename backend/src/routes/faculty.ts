@@ -1,6 +1,6 @@
 import express from 'express';
-import { authenticate } from '../middleware/auth';
-import { requireRole } from '../middleware/requireRole';
+import { authenticate } from '../middlewares/auth';
+import { requireRole } from '../middlewares/requireRole';
 import Class from '../models/Class';
 import Query from '../models/Query';
 import Performance from '../models/Performance';
